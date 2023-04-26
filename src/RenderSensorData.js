@@ -95,8 +95,8 @@ function RenderSensorData() {
                 "caption": "Simulated Weather Information",
                 "subCaption": "Temprature & Humidity",
                 "pyaxisminvalue": "40",
-                "pyaxismaxvalue": "20",
-                "syaxisminvalue": "30",
+                "pyaxismaxvalue": "10",
+                "syaxisminvalue": "20",
                 "syaxismaxvalue": "100",
                 "pYAxisName": "Temprature (°C)",
                 "sYAxisName": "Humidity",
@@ -159,7 +159,7 @@ function RenderSensorData() {
                     "seriesname": "Temprature",
                     "showvalues": "0",
                     "data": [
-                        { "value": "30.10" }
+                        { "value": "20.10" }
                     ]
                 },
                 {
@@ -167,7 +167,7 @@ function RenderSensorData() {
                     "showvalues": "0",
                     "parentyaxis": "S",
                     "data": [
-                        { "value": "60.10" }
+                        { "value": "30.10" }
                     ]
                 }
             ]

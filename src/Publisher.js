@@ -1,5 +1,6 @@
 import { Client } from '@stomp/stompjs';
 import { useRef } from "react";
+import { createPortal } from 'react-dom';
 
 function Publisher() {
     var client = null;
@@ -12,8 +13,8 @@ function Publisher() {
             client.deactivate();
         }
         client = new Client();
-
-        const payLoad = { command_name: 'sensor_controller', action: com, description: 'switch the sensor on' }
+        const des = "Switch the sensor " + com;
+        const payLoad = { command_name: 'sensor_controller', action: com, description: des };
         console.log("Try to connect ...!");
 
         client.configure({
